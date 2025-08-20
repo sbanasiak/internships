@@ -5,6 +5,7 @@
     "navigation_bar": {
         "map": "Map",
         "add_company": "Add company",
+        "dashboard": "Dashboard",
         "logged_as": "Logged as",
         "own_companies": "Own companies",
         "manage_companies": "Manage companies",
@@ -106,6 +107,21 @@
         "request_button": "Request",
         "registration_button": "Register",
         "go_home_button": "Go back home"
+    },
+    "dashboard": {
+        "title": "Analytics Dashboard",
+        "subtitle": "Overview of internship program statistics and activity",
+        "total_companies": "Total Companies",
+        "total_users": "Total Users",
+        "verified_companies": "Verified Companies",
+        "recent_activity": "Recent Activity",
+        "companies_this_month": "{count} this month",
+        "registered_users": "Registered users",
+        "pending_review": "{count} pending",
+        "last_7_days": "Last 7 days",
+        "monthly_growth": "Monthly Company Growth",
+        "status_distribution": "Company Status Distribution",
+        "recent_companies": "Recently Added Companies"
     },
     "common_labels": {
         "email": "Email address",

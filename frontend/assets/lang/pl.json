@@ -5,6 +5,7 @@
     "navigation_bar": {
         "map": "Mapa",
         "add_company": "Dodaj firmę",
+        "dashboard": "Panel",
         "sign_in": "Zaloguj",
         "logged_as": "Zalogowany jako",
         "own_companies": "Własne firmy",
@@ -107,6 +108,21 @@
         "request_button": "Zgłoś",
         "registration_button": "Zarejestruj się",
         "go_home_button": "Wróć na stronę główną"
+    },
+    "dashboard": {
+        "title": "Panel Analityczny",
+        "subtitle": "Przegląd statystyk programu praktyk i aktywności",
+        "total_companies": "Wszystkie Firmy",
+        "total_users": "Wszyscy Użytkownicy",
+        "verified_companies": "Zweryfikowane Firmy",
+        "recent_activity": "Najnowsza Aktywność",
+        "companies_this_month": "{count} w tym miesiącu",
+        "registered_users": "Zarejestrowani użytkownicy",
+        "pending_review": "{count} oczekujących",
+        "last_7_days": "Ostatnie 7 dni",
+        "monthly_growth": "Miesięczny Wzrost Firm",
+        "status_distribution": "Rozkład Statusów Firm",
+        "recent_companies": "Ostatnio Dodane Firmy"
     },
     "common_labels": {
         "email": "Adres e-mail",

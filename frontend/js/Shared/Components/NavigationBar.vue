@@ -26,6 +26,12 @@ const navItems = reactive([
     show: true,
   },
   {
+    labelKey: "navigation_bar.dashboard",
+    routeName: "dashboard",
+    show: true,
+    authRequired: true,
+  },
+  {
     labelKey: "navigation_bar.add_company",
     routeName: "company-create",
     show: true,
@@ -60,7 +66,7 @@ const navItems = reactive([
                 v-for="navItem in navItems"
                 :key="navItem.routeName"
               >
-                <template v-if="navItem.show">
+                <template v-if="navItem.show && (!navItem.authRequired || $page.props.auth.user)">
                   <InertiaLink
                     :href="route(navItem.routeName)"
                     class="hover:text-white px-3 py-2 transition-all"
@@ -192,11 +198,11 @@ const navItems = reactive([
           :key="navItem.routeName"
         >
           <div
-            v-if="navItem.show"
+            v-if="navItem.show && (!navItem.authRequired || $page.props.auth.user)"
             class="flex flex-col"
           >
             <DisclosureButton
-              v-if="navItem.show"
+              v-if="navItem.show && (!navItem.authRequired || $page.props.auth.user)"
               as="a"
               :href="route(navItem.routeName)"
               class="inline-flex hover:text-white px-3 py-2"
