@@ -28,3 +28,6 @@ vendor
 *.sln
 *.sw?
 .vs/slnx.sqlite
+
+# Build artifacts
+frontend/undefined/

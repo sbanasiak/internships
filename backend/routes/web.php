@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Illuminate\Support\Facades\Route;
 use Internships\Http\Controllers\CompanyController;
+use Internships\Http\Controllers\DashboardController;
 
 require __DIR__ . "/auth.php";
 Route::get("/", [CompanyController::class, "index"])
@@ -26,3 +27,7 @@ Route::patch("/company/view/{company}", [CompanyController::class, "verify"])
 
 Route::get("/company/close", [CompanyController::class, "close"])
     ->name("company-close");
+
+Route::get("/dashboard", [DashboardController::class, "index"])
+    ->middleware(["auth", "verified"])
+    ->name("dashboard");
